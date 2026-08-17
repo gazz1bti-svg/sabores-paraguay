@@ -1,387 +1,437 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabores del Paraguay | Recetario Maestro</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabores del Paraguay - Gastronomía Tradicional</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header id="inicio">
-        <div class="contenedor-header">
-            <span class="header-icon">🇵🇾</span>
-            <h1>SABORES DEL PARAGUAY</h1>
-            <div class="divider"></div>
-            <p>El corazón de la gastronomía guaraní en tu cocina</p>
-        </div>
-    </header>
+  <!-- ENCABEZADO CON IMAGEN Y DEGRADADO INTEGRADO -->
+  <header id="inicio">
+    <div className="tricolor">
+      <div className="tricolor-rojo"></div>
+      <div className="tricolor-blanco"></div>
+      <div className="tricolor-azul"></div>
+    </div>
+    <div class="contenedor-header">
+      <div class="badge-paraguay" id="badge-nacional">
+        <span class="header-icon">🇵🇾</span>
+        <span>Gastronomía Tradicional del Paraguay</span>
+      </div>
+      <h1 id="titulo-principal">SABORES DEL PARAGUAY</h1>
+      <div class="divider-header"></div>
+      <p id="subtitulo-principal">
+        Explora la riqueza y profundidad de nuestra cultura gastronómica guaraní con las 25 recetas más auténticas, ingredientes autóctonos y los secretos del tatakuá.
+      </p>
+    </div>
+  </header>
 
-    <!-- NAVEGACIÓN STICKY -->
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#comidas">Comidas</a></li>
-            <li><a href="#postres">Postres</a></li>
-            <li><a href="#recetario">Libro de Recetas</a></li>
-            <li><a href="#cultura">Cultura</a></li>
-        </ul>
-    </nav>
+  <!-- NAVEGACIÓN STICKY -->
+  <nav id="navegacion-principal">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" id="logo-inicio">
+        <span>🇵🇾</span>
+        <span>Sabores del Paraguay</span>
+      </a>
+      <ul class="nav-links" id="menu-navegacion">
+        <li><a href="#inicio" id="enlace-inicio">Inicio</a></li>
+        <li><a href="#comidas" id="enlace-comidas">Comidas (20)</a></li>
+        <li><a href="#postres" id="enlace-postres">Postres (5)</a></li>
+        <li><a href="#recetario" id="enlace-recetario">Libro de Recetas</a></li>
+        <li><a href="#cultura" id="enlace-cultura">Cultura</a></li>
+        <li><a href="#footer-cultural" id="enlace-patrimonio">Patrimonio</a></li>
+      </ul>
+    </div>
+  </nav>
 
-    <!-- SLIDER CSS (Solo HTML/CSS) -->
-    <section class="slider-container">
-        <div class="slider-wrapper">
-            <div class="slide">
-                <img src="https://www.miventanaalmundo.com/wp-content/uploads/2024/06/GASTRONOMIA-DE-PARAGUAY-768x511.png" alt="Gastronomía Paraguaya">
-                <div class="slide-text">Tradición que se saborea</div>
-            </div>
-            <!-- Se pueden añadir más slides aquí siguiendo la misma estructura -->
-        </div>
+  <main id="contenido-recetas">
+    <!-- BIENVENIDA -->
+    <section class="intro-box" id="seccion-intro">
+      <h2>Un viaje culinario por el corazón de América</h2>
+      <p>
+        Bienvenido al recetario más completo sobre la gastronomía paraguaya. Aquí encontrarás cada plato con su historia, lista de ingredientes tradicionales y el procedimiento detallado paso a paso para lograr el sabor auténtico de nuestra tierra.
+      </p>
+      <div class="hero-actions">
+        <a href="#comidas" class="hero-btn hero-btn-primary" id="btn-hero-comidas">
+          🍽️ 20 Comidas Típicas
+        </a>
+        <a href="#postres" class="hero-btn hero-btn-secondary" id="btn-hero-postres">
+          🍰 5 Postres Autóctonos
+        </a>
+        <a href="#recetario" class="hero-btn hero-btn-secondary" id="btn-hero-recetario">
+          📖 Libro de Recetas Paso a Paso
+        </a>
+      </div>
     </section>
 
-    <main>
-        <!-- BIENVENIDA -->
-        <section class="intro-box">
-            <h2>Un viaje culinario por el corazón de América</h2>
-            <p>Bienvenido al recetario más completo. Explora el procedimiento detallado paso a paso para que logres el sabor auténtico de nuestra tierra.</p>
-        </section>
+    <!-- SECCIÓN COMIDAS (20 PLATOS) -->
+    <section id="comidas" class="seccion-bloque">
+      <div class="section-header" id="header-comidas">
+        <h2 class="section-title">🍽️ Comidas Tradicionales (20 Platos)</h2>
+        <div class="divider"></div>
+        <p>Sopas emblemáticas, chipas de almidón y maíz, masas de mandioca en sartén, guisos y asados a las brasas.</p>
+      </div>
 
-        <!-- SECCIÓN COMIDAS (TARJETAS) -->
-        <section id="comidas">
-            <h2 class="section-title">🍽️ Comidas Tradicionales</h2>
-            <div class="grid-cards">
-                <article class="card"><h3>Sopa Paraguaya</h3><span class="emoji">🍲</span><a href="#r1" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Chipa Guasu</h3><span class="emoji">🌽</span><a href="#r2" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Mbejú</h3><span class="emoji">🧀</span><a href="#r3" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Chipa Almidón</h3><span class="emoji">🥯</span><a href="#r4" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Chipa So'o</h3><span class="emoji">🥩</span><a href="#r5" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Chipa Mestizo</h3><span class="emoji">🥯</span><a href="#r6" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Vori Vori</h3><span class="emoji">🥣</span><a href="#r8" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Bori de Gallina</h3><span class="emoji">🍗</span><a href="#r9" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Payaguá Mascada</h3><span class="emoji">🥩</span><a href="#r10" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Pastel Mandi'o</h3><span class="emoji">🥟</span><a href="#r11" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Jopará</h3><span class="emoji">🌿</span><a href="#r12" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Locro Paraguayo</h3><span class="emoji">🥣</span><a href="#r13" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Kivevé</h3><span class="emoji">🎃</span><a href="#r14" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Puchero</h3><span class="emoji">🍖</span><a href="#r15" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Tallarín</h3><span class="emoji">🍝</span><a href="#r16" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Asado</h3><span class="emoji">🔥</span><a href="#r17" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>So'o Apu'a</h3><span class="emoji">☄️</span><a href="#r18" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Caldo Avá</h3><span class="emoji">🥘</span><a href="#r19" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Sopa de Pescado</h3><span class="emoji">🐟</span><a href="#r20" class="btn">Leer Receta</a></article>
-            </div>
-        </section>
-
-        <!-- SECCIÓN POSTRES (TARJETAS) -->
-        <section id="postres">
-            <h2 class="section-title">🍰 Postres de nuestra Tierra</h2>
-            <div class="grid-cards">
-                <article class="card card-postre"><h3>Mazamorra</h3><span class="emoji">🍚</span><a href="#r21" class="btn">Leer Receta</a></article>
-                <article class="card card-postre"><h3>Dulce de Batata</h3><span class="emoji">🍠</span><a href="#r22" class="btn">Leer Receta</a></article>
-                <article class="card card-postre"><h3>Ka'i Ladrillo</h3><span class="emoji">🧱</span><a href="#r23" class="btn">Leer Receta</a></article>
-                <article class="card card-postre"><h3>Arroz con Leche</h3><span class="emoji">🥛</span><a href="#r24" class="btn">Leer Receta</a></article>
-                <article class="card card-postre"><h3>Kivevé Dulce</h3><span class="emoji">🍮</span><a href="#r25" class="btn">Leer Receta</a></article>
-            </div>
-        </section>
-
-        <!-- RECETARIO EXTENSO -->
-        <section id="recetario" class="book-container">
-            <h2 class="section-title">📖 Recetario Maestro</h2>
-
-            <!-- 1 -->
-            <article class="recipe-full" id="r1">
+      <div class="grid-cards" id="grid-comidas-tipicas">
+        <!-- 1. Sopa Paraguaya -->
+        <article class="card" id="card-sopa-paraguaya">
+          <div class="card-img-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Sopa_paraguaya_comida.jpg" alt="Sopa Paraguaya" loading="lazy" />
+            <span class="card-emoji">🍲</span>
+            <span class="card-time">⏱️ 60 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
                 <h3>Sopa Paraguaya</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Sopa_paraguaya_comida.jpg" class="recipe-img" alt="Sopa Paraguaya">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>500g Harina de maíz</li><li>300g Queso Paraguay</li><li>4 Huevos</li><li>500ml Leche</li><li>2 Cebollas</li><li>100g Grasa de cerdo</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Rehogar cebollas en grasa.</li>
-                            <li>Batir huevos con sal, añadir cebolla y queso.</li>
-                            <li>Incorporar leche y harina de maíz.</li>
-                            <li>Hornear a 200°C por 50 min.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <span class="badge-num">#1</span>
+              </div>
+              <p class="card-guarani">Sopa Paraguái</p>
+              <p class="card-desc">El único bizcochuelo salado del mundo nacido de una feliz equivocación culinaria.</p>
+              <div class="tag-container">
+                <span class="tag">Harina de Maíz</span>
+                <span class="tag">Queso Paraguay</span>
+                <span class="tag">Tatakuá</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#sopa-paraguaya" class="btn">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
 
-            <!-- 2 -->
-            <article class="recipe-full" id="r2">
-                <h3>Chipa Guasu</h3>
-                <img src="https://i.blogs.es/090400/chipa-guazu/1366_2000.jpg" class="recipe-img" alt="Chipa Guasu">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>1kg de Choclo</li><li>400g de Queso Paraguay</li><li>5 Huevos</li><li>200ml de Leche</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Licuar el choclo con leche y huevos.</li>
-                            <li>Mezclar con cebolla frita y queso.</li>
-                            <li>Hornear a 180°C durante una hora.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <!-- 2. Chipa Guasu -->
+        <article class="card" id="card-chipa-guasu">
+          <div class="card-img-container">
+            <img src="https://i.blogs.es/090400/chipa-guazu/1366_2000.jpg" alt="Chipa Guasu" loading="lazy" />
+            <span class="card-emoji">🌽</span>
+            <span class="card-time">⏱️ 55 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
+                <h3>Chipa Guasú</h3>
+                <span class="badge-num">#2</span>
+              </div>
+              <p class="card-guarani">Chipa Guasu</p>
+              <p class="card-desc">Pastel horneado de choclo fresco tierno, cebollas rehogadas, abundante queso criollo y huevos.</p>
+              <div class="tag-container">
+                <span class="tag">Choclo Tierno</span>
+                <span class="tag">Queso Paraguay</span>
+                <span class="tag">Horno</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#chipa-guasu" class="btn">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
 
-            <!-- 3 -->
-            <article class="recipe-full" id="r3">
-                <h3>Mbejú Tradicional</h3>
-                <img src="https://tembiuparaguay.com/wp-content/uploads/2016/06/mbeju-comida-paraguaya.jpg" class="recipe-img" alt="Mbejú">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>500g Almidón de mandioca</li><li>100g Harina de maíz</li><li>250g Queso Paraguay</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Mezclar almidón, harina y queso en un arenado.</li>
-                            <li>Cocinar en sartén caliente sin aceite.</li>
-                            <li>Dar vuelta cuando esté dorado.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 4 -->
-            <article class="recipe-full" id="r4">
+        <!-- 3. Chipa Almidón -->
+        <article class="card" id="card-chipa-almidon">
+          <div class="card-img-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Chipa_Paraguay.jpg" alt="Chipa Almidón" loading="lazy" />
+            <span class="card-emoji">🫓</span>
+            <span class="card-time">⏱️ 40 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
                 <h3>Chipa Almidón</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Chipa_Paraguay.jpg" class="recipe-img" alt="Chipa Almidón">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>1kg Almidón de mandioca</li><li>400g Queso duro</li><li>3 Huevos</li><li>150g Grasa</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Amasar grasa, huevos, queso y almidón.</li>
-                            <li>Formar argollas.</li>
-                            <li>Hornear a 250°C por 15-20 min.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <span class="badge-num">#3</span>
+              </div>
+              <p class="card-guarani">Chipa Aramirõ</p>
+              <p class="card-desc">Pan sagrado de almidón de mandioca, queso maduro y semillas de anís, con exterior crocante e interior suave.</p>
+              <div class="tag-container">
+                <span class="tag">Almidón</span>
+                <span class="tag">Anís</span>
+                <span class="tag">Semana Santa</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#chipa-almidon" class="btn">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
 
-            <!-- 5 -->
-            <article class="recipe-full" id="r5">
-                <h3>Chipa So'o</h3>
-                <img src="https://i.ytimg.com/vi/7jG4C9I1v_c/maxresdefault.jpg" class="recipe-img" alt="Chipa So'o">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>Masa de chipa</li><li>500g Carne molida</li><li>Huevo duro</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Hacer bolas de masa rellenas con el picadillo de carne.</li>
-                            <li>Cerrar bien y hornear a 200°C.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <!-- 4. Mbejú -->
+        <article class="card" id="card-mbeju">
+          <div class="card-img-container">
+            <img src="https://tembiuparaguay.com/wp-content/uploads/2016/06/mbeju-comida-paraguaya.jpg" alt="Mbejú" loading="lazy" />
+            <span class="card-emoji">🥞</span>
+            <span class="card-time">⏱️ 20 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
+                <h3>Mbejú</h3>
+                <span class="badge-num">#4</span>
+              </div>
+              <p class="card-guarani">Mbeju</p>
+              <p class="card-desc">Torta fina frita a la paila a base de almidón de mandioca, harina de maíz, grasa y queso paraguay.</p>
+              <div class="tag-container">
+                <span class="tag">Almidón</span>
+                <span class="tag">Queso</span>
+                <span class="tag">Cocido</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#mbeju" class="btn">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
 
-            <!-- 6 -->
-            <article class="recipe-full" id="r6">
-                <h3>Chipa Mestizo</h3>
-                <img src="https://pbs.twimg.com/media/DWmXvXNWAAAbZ7H.jpg" class="recipe-img" alt="Chipa Mestizo">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>700g Almidón</li><li>300g Harina de maíz</li><li>150g Grasa</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Mezclar ambas harinas para una textura única.</li>
-                            <li>Amasar con queso y hornear fuerte.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <!-- 5. Vori Vori de Gallina -->
+        <article class="card" id="card-vori-vori">
+          <div class="card-img-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Vori_vori.JPG" alt="Vori Vori" loading="lazy" />
+            <span class="card-emoji">🥣</span>
+            <span class="card-time">⏱️ 60 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
+                <h3>Vori Vori de Gallina</h3>
+                <span class="badge-num">#5</span>
+              </div>
+              <p class="card-guarani">Vori Vori Ryguasu</p>
+              <p class="card-desc">Reconocida internacionalmente entre las mejores sopas del mundo. Caldo espeso con bolitas de maíz y queso.</p>
+              <div class="tag-container">
+                <span class="tag">Gallina Casera</span>
+                <span class="tag">Maíz</span>
+                <span class="tag">Caldo</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#vori-vori" class="btn">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
 
-            <!-- 8 -->
-            <article class="recipe-full" id="r8">
-                <h3>Vori Vori</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Vori_vori.JPG" class="recipe-img" alt="Vori Vori">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>Harina de maíz</li><li>Queso Paraguay</li><li>Caldo de carne</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Formar bolitas con la harina, queso y un poco de caldo.</li>
-                            <li>Hervir en el caldo hasta que floten.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 9 -->
-            <article class="recipe-full" id="r9">
-                <h3>Bori Bori de Gallina</h3>
-                <img src="https://www.recetapy.com/wp-content/uploads/2021/05/bori-bori-de-gallina-1024x683.jpg" class="recipe-img" alt="Bori Bori de Gallina">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>1 Gallina casera</li><li>Verduras</li><li>Masa de vori</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Cocinar la gallina en un caldo rico en verduras.</li>
-                            <li>Echar las bolitas de maíz al caldo hirviendo.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 10 -->
-            <article class="recipe-full" id="r10">
-                <h3>Payaguá Mascada</h3>
-                <img src="https://www.abc.com.py/resizer/v2/L7X6M7B5V5B7R6S7G6S7B6M7B5.jpg?auth=da97c27685601700687718991443425110d93706346299104037593683884489&smart=true&width=1200&height=675" class="recipe-img" alt="Payaguá Mascada">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>1kg Mandioca</li><li>500g Carne cocida</li><li>Especias</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Hacer puré de mandioca y mezclar con la carne picada.</li>
-                            <li>Formar discos y freír en aceite caliente.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 11 -->
-            <article class="recipe-full" id="r11">
+        <!-- 6. Pastel Mandi'o -->
+        <article class="card" id="card-pastel-mandio">
+          <div class="card-img-container">
+            <img src="https://pbs.twimg.com/media/DWmXvXNWAAAbZ7H.jpg" alt="Pastel Mandi'o" loading="lazy" />
+            <span class="card-emoji">🥟</span>
+            <span class="card-time">⏱️ 50 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
                 <h3>Pastel Mandi'o</h3>
-                <img src="https://i.ytimg.com/vi/l2KscF48n6o/maxresdefault.jpg" class="recipe-img" alt="Pastel Mandi'o">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>Masa de mandioca</li><li>Harina de maíz</li><li>Carne molida</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Estirar la masa, rellenar con carne y cerrar.</li>
-                            <li>Freír en abundante grasa o aceite.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+                <span class="badge-num">#6</span>
+              </div>
+              <p class="card-guarani">Pastel Mandi'o</p>
+              <p class="card-desc">Empanadas con masa tierna de mandioca y harina de maíz, rellenas de un jugoso so'o ku'i especiado.</p>
+              <div class="tag-container">
+                <span class="tag">Mandioca</span>
+                <span class="tag">Carne Vacuna</span>
+                <span class="tag">San Juan</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#pastel-mandio" class="btn">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
 
-            <!-- 12 -->
-            <article class="recipe-full" id="r12">
-                <h3>Jopará</h3>
-                <img src="https://www.abc.com.py/resizer/v2/G5S7G6S7B6M7B5B7R6S7G6S7B6.jpg?auth=03f0b24016790938367980595304723018868846938367980595304723018868&smart=true&width=1200&height=675" class="recipe-img" alt="Jopará">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>Poroto</li><li>Locro</li><li>Queso y leche</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación:</strong>
-                        <ol>
-                            <li>Hervir granos hasta que estén tiernos.</li>
-                            <li>Añadir verduras y queso al final.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <!-- 7. Payaguá Mascada -->
+        <article class="card" id="card-payagua-mascada">
+          <div class="card-img-container">
+            <img src="https://i.ytimg.com/vi/7jG4C9I1v_c/maxresdefault.jpg" alt="Payaguá Mascada" loading="lazy" />
+            <span class="card-emoji">🍘</span>
+            <span class="card-time">⏱️ 40 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
+                <h3>Payaguá Mascada</h3>
+                <span class="badge-num">#7</span>
+              </div>
+              <p class="card-guarani">Pajagua Maskada</p>
+              <p class="card-desc">Tortitas fritas doradas elaboradas con puré de mandioca, carne molida cocida, cebolla y comino.</p>
+              <div class="tag-container">
+                <span class="tag">Mandioca</span>
+                <span class="tag">Carne</span>
+                <span class="tag">San Juan</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#payagua-mascada" class="btn">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
 
-            <!-- 13 -->
-            <article class="recipe-full" id="r13">
-                <h3>Locro Paraguayo</h3>
-                <img src="https://tembiuparaguay.com/wp-content/uploads/2016/06/locro-paraguayo.jpg" class="recipe-img" alt="Locro">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Maíz blanco</li><li>Puchero</li><li>Verduras</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Cocinar el maíz blanco con la carne por varias horas.</li>
-                            <li>Servir bien espeso.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <!-- 8. Chipa So'o -->
+        <article class="card" id="card-chipa-soo">
+          <div class="card-img-container">
+            <img src="https://www.recetapy.com/wp-content/uploads/2021/05/bori-bori-de-gallina-1024x683.jpg" alt="Chipa So'o" loading="lazy" />
+            <span class="card-emoji">🥮</span>
+            <span class="card-time">⏱️ 50 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
+                <h3>Chipa So'o</h3>
+                <span class="badge-num">#8</span>
+              </div>
+              <p class="card-guarani">Chipa So'o</p>
+              <p class="card-desc">Masa de harina de maíz y grasa de cerdo rellena con un exquisito picadillo de carne vacuna y huevo duro.</p>
+              <div class="tag-container">
+                <span class="tag">Carne</span>
+                <span class="tag">Maíz</span>
+                <span class="tag">Tatakuá</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#chipa-soo" class="btn">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            <!-- 14 -->
-            <article class="recipe-full" id="r14">
-                <h3>Kivevé</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Kiveve.JPG" class="recipe-img" alt="Kivevé">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Calabaza (andaí)</li><li>Harina de maíz</li><li>Queso</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Hervir calabaza, añadir harina de maíz en lluvia y terminar con queso.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+    <!-- SECCIÓN POSTRES (5 DELICIAS) -->
+    <section id="postres" class="seccion-bloque">
+      <div class="section-header" id="header-postres">
+        <h2 class="section-title">🍰 Postres de nuestra Tierra (5 Delicias)</h2>
+        <div class="divider"></div>
+        <p>Mazamorra ancestral con miel negra, dulce de batata, ka'i ladrillo, arroz con leche y kivevé dulce.</p>
+      </div>
 
-            <!-- 15 -->
-            <article class="recipe-full" id="r15">
-                <h3>Puchero</h3>
-                <img src="https://www.abc.com.py/resizer/v2/Y2J6V5X3V5BQ3H7Y7I2W3N3W3U.jpg?auth=a7b638706346299104037593683884489da97c27685601700687718991443425&smart=true&width=1200&height=675" class="recipe-img" alt="Puchero">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Carne con hueso</li><li>Papa, zapallo, zanahoria</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Hervir la carne con las verduras hasta que todo esté tierno.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+      <div class="grid-cards grid-postres" id="grid-postres-dulces">
+        <!-- 21. Mazamorra -->
+        <article class="card card-postre" id="card-mazamorra">
+          <div class="card-img-container">
+            <img src="https://www.abc.com.py/resizer/v2/L7X6M7B5V5B7R6S7G6S7B6M7B5.jpg?auth=da97c27685601700687718991443425110d93706346299104037593683884489&smart=true&width=1200&height=675" alt="Mazamorra" loading="lazy" />
+            <span class="card-emoji">🍯</span>
+            <span class="card-time">⏱️ 90 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
+                <h3>Mazamorra (Kaguyjy)</h3>
+                <span class="badge-num">#21</span>
+              </div>
+              <p class="card-guarani">Kaguyjy</p>
+              <p class="card-desc">Postre ancestral de maíz blanco locro cocido a fuego lento, servido frío con abundante miel negra de caña.</p>
+              <div class="tag-container">
+                <span class="tag tag-postre">Maíz Blanco</span>
+                <span class="tag tag-postre">Miel Negra</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#mazamorra" class="btn btn-postre">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
 
-            <!-- 16 -->
-            <article class="recipe-full" id="r16">
-                <h3>Tallarín Paraguayo</h3>
-                <img src="https://www.recetapy.com/wp-content/uploads/2021/05/tallarin-de-pollo-paraguayo.jpg" class="recipe-img" alt="Tallarín">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Fideos</li><li>Pollo o carne</li><li>Salsa de tomate</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Preparar un estofado rojo intenso y mezclar con los fideos cocidos.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+        <!-- 22. Dulce de Guayaba -->
+        <article class="card card-postre" id="card-dulce-guayaba">
+          <div class="card-img-container">
+            <img src="https://i.ytimg.com/vi/l2KscF48n6o/maxresdefault.jpg" alt="Dulce de Guayaba" loading="lazy" />
+            <span class="card-emoji">🍮</span>
+            <span class="card-time">⏱️ 80 min</span>
+          </div>
+          <div class="card-body">
+            <div>
+              <div class="card-header-row">
+                <h3>Dulce de Guayaba</h3>
+                <span class="badge-num">#22</span>
+              </div>
+              <p class="card-guarani">Arrop Guavira</p>
+              <p class="card-desc">Mermelada o pasta firme elaborada con pulpa fresca de guayabas silvestres y azúcar, ideal con queso paraguay.</p>
+              <div class="tag-container">
+                <span class="tag tag-postre">Guayaba</span>
+                <span class="tag tag-postre">Queso Paraguay</span>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a href="#dulce-guayaba" class="btn btn-postre">Leer Receta Detallada →</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            <!-- 17 -->
-            <article class="recipe-full" id="r17">
-                <h3>Asado con Mandioca</h3>
-                <img src="https://i.ytimg.com/vi/Uj5816v6W8Y/maxresdefault.jpg" class="recipe-img" alt="Asado">
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Costilla vacuna</li><li>Mandioca hervida</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Carne a la parrilla con sal gruesa. Servir con mandioca "que explote".</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
+    <!-- CULTURA Y TRADICIÓN -->
+    <section id="cultura" class="culture-box">
+      <div class="section-header">
+        <h2 class="section-title">🌿 Nuestra Identidad Culinaria</h2>
+        <div class="divider"></div>
+        <p>Herencia botánica guaraní fusionada con las costumbres criollas de nuestra tierra.</p>
+      </div>
 
-    
+      <div class="culture-text">
+        <p>
+          La gastronomía paraguaya es un fenómeno cultural único en América Latina. A diferencia de otros países, el Paraguay ha mantenido viva su lengua y sus costumbres guaraníes, fusionándolas con la influencia hispánica introducida desde el siglo XVI.
+        </p>
+        <p>
+          El uso de la <strong>mandioca</strong> (que acompaña cada comida como pan sagrado de la mesa), el <strong>maíz</strong> (en grano y harina) y el <strong>queso Paraguay</strong> artesanal, son los pilares fundamentales de nuestro sabor nacional. Compartir una mesa en Paraguay es celebrar la historia de un pueblo que se mantiene unido a través de sus tradiciones.
+        </p>
+      </div>
+
+      <h3 class="culture-subtitle">Los 5 Pilares Fundamentales</h3>
+      <div class="pillars-grid" id="grid-pilares">
+        <div class="pillar-card" id="pilar-mandioca">
+          <span class="pillar-emoji">🥔</span>
+          <h4>Mandioca (Mandi'o)</h4>
+          <p>Base viva de la mesa diaria y fuente del almidón para la chipa y el mbejú.</p>
+        </div>
+        <div class="pillar-card" id="pilar-maiz">
+          <span class="pillar-emoji">🌽</span>
+          <h4>Maíz Amarillo (Avati)</h4>
+          <p>Pilar de la sopa paraguaya, el chipa guasu y las bolitas del tradicional vori vori.</p>
+        </div>
+        <div class="pillar-card" id="pilar-queso">
+          <span class="pillar-emoji">🧀</span>
+          <h4>Queso Paraguay</h4>
+          <p>Queso artesanal criollo elaborado con leche cruda y fermentación tradicional.</p>
+        </div>
+        <div class="pillar-card" id="pilar-tatakua">
+          <span class="pillar-emoji">🔥</span>
+          <h4>Tatakuá</h4>
+          <p>Horno abovedado de barro que otorga el sabor ahumado y dorado característico.</p>
+        </div>
+        <div class="pillar-card" id="pilar-poha-nana">
+          <span class="pillar-emoji">🌿</span>
+          <h4>Pohã Ñana</h4>
+          <p>Hierbas medicinales frescas que aromatizan y dan vida al tereré ancestral.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER EXTENSO SOBRE LA CULTURA PARAGUAYA -->
+  <footer id="footer-cultural">
+    <div class="footer-content">
+      <div class="footer-top">
+        <div class="footer-info">
+          <h3 id="footer-logo"><span>🇵🇾</span> Sabores del Paraguay • Enciclopedia Culinaria</h3>
+          <p>Un homenaje vivo a la memoria histórica, la lengua guaraní y el patrimonio gastronómico de la República del Paraguay.</p>
+        </div>
+        <a href="#inicio" class="btn-top" id="btn-volver-arriba">▲ Volver al inicio</a>
+      </div>
+
+      <!-- Cuadrícula Cultural del Footer -->
+      <div class="footer-cultural-grid" id="secciones-culturales-footer">
+        <div class="footer-col" id="footer-col-origenes">
+          <h4>🏛️ Raíces y Mestizaje</h4>
+          <p>
+            La cocina paraguaya nació del encuentro entre los saberes botánicos de los pueblos guaraníes y las técnicas culinarias traídas por los colonizadores españoles y las misiones jesuíticas y franciscanas. De esta alianza nacieron creaciones irrepetibles como la sopa paraguaya sólida, la chipa en sus múltiples variedades y los caldos enriquecidos con harina de maíz.
+          </p>
+        </div>
+
+        <div class="footer-col" id="footer-col-terere">
+          <h4>🌿 El Tereré y el Pohã Ñana</h4>
+          <p>
+            Declarado <strong>Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO</strong> en 2020, el tereré es mucho más que una infusión fría de yerba mate: es el rito social por excelencia del paraguayo. Las "yuyeras" preparan combinaciones medicinales en mortero (como menta'i, burrito, cedrón kapi'i y santa lucía) para refrescar el cuerpo y alimentar el espíritu de fraternidad.
+          </p>
+        </div>
+
+        <div class="footer-col" id="footer-col-tatakua">
+          <h4>🔥 El Tatakuá y el Fuego Sagrado</h4>
+          <p>
+            El <em>tatakuá</em> (del guaraní <em>tata</em>, fuego; y <em>kua</em>, cueva u hoyo) es el horno de barro y ladrillo con forma de
