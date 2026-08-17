@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabores del Paraguay | Recetario Maestro Detallado</title>
+    <title>Sabores del Paraguay | Recetario Maestro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
             <span class="header-icon">🇵🇾</span>
             <h1>SABORES DEL PARAGUAY</h1>
             <div class="divider"></div>
-            <p>Explora la profundidad de nuestra cultura gastronómica guaraní</p>
+            <p>El corazón de la gastronomía guaraní en tu cocina</p>
         </div>
     </header>
 
@@ -29,25 +29,34 @@
         </ul>
     </nav>
 
+    <!-- SLIDER CSS (Solo HTML/CSS) -->
+    <section class="slider-container">
+        <div class="slider-wrapper">
+            <div class="slide">
+                <img src="https://www.miventanaalmundo.com/wp-content/uploads/2024/06/GASTRONOMIA-DE-PARAGUAY-768x511.png" alt="Gastronomía Paraguaya">
+                <div class="slide-text">Tradición que se saborea</div>
+            </div>
+            <!-- Se pueden añadir más slides aquí siguiendo la misma estructura -->
+        </div>
+    </section>
+
     <main>
         <!-- BIENVENIDA -->
         <section class="intro-box">
             <h2>Un viaje culinario por el corazón de América</h2>
-            <p>Bienvenido al recetario más completo sobre la gastronomía paraguaya. Aquí no solo encontrarás una lista de ingredientes, sino el procedimiento detallado paso a paso para que logres el sabor auténtico de nuestra tierra. Explora, cocina y disfruta.</p>
+            <p>Bienvenido al recetario más completo. Explora el procedimiento detallado paso a paso para que logres el sabor auténtico de nuestra tierra.</p>
         </section>
 
         <!-- SECCIÓN COMIDAS (TARJETAS) -->
         <section id="comidas">
             <h2 class="section-title">🍽️ Comidas Tradicionales</h2>
             <div class="grid-cards">
-                <!-- 20 Comidas -->
                 <article class="card"><h3>Sopa Paraguaya</h3><span class="emoji">🍲</span><a href="#r1" class="btn">Leer Receta</a></article>
                 <article class="card"><h3>Chipa Guasu</h3><span class="emoji">🌽</span><a href="#r2" class="btn">Leer Receta</a></article>
                 <article class="card"><h3>Mbejú</h3><span class="emoji">🧀</span><a href="#r3" class="btn">Leer Receta</a></article>
                 <article class="card"><h3>Chipa Almidón</h3><span class="emoji">🥯</span><a href="#r4" class="btn">Leer Receta</a></article>
                 <article class="card"><h3>Chipa So'o</h3><span class="emoji">🥩</span><a href="#r5" class="btn">Leer Receta</a></article>
                 <article class="card"><h3>Chipa Mestizo</h3><span class="emoji">🥯</span><a href="#r6" class="btn">Leer Receta</a></article>
-                <article class="card"><h3>Chipa Rorá</h3><span class="emoji">🌾</span><a href="#r7" class="btn">Leer Receta</a></article>
                 <article class="card"><h3>Vori Vori</h3><span class="emoji">🥣</span><a href="#r8" class="btn">Leer Receta</a></article>
                 <article class="card"><h3>Bori de Gallina</h3><span class="emoji">🍗</span><a href="#r9" class="btn">Leer Receta</a></article>
                 <article class="card"><h3>Payaguá Mascada</h3><span class="emoji">🥩</span><a href="#r10" class="btn">Leer Receta</a></article>
@@ -78,24 +87,24 @@
 
         <!-- RECETARIO EXTENSO -->
         <section id="recetario" class="book-container">
-            <h2 class="section-title">📖 Recetario Maestro (Paso a Paso)</h2>
+            <h2 class="section-title">📖 Recetario Maestro</h2>
 
             <!-- 1 -->
             <article class="recipe-full" id="r1">
                 <h3>Sopa Paraguaya</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Sopa_paraguaya_comida.jpg" class="recipe-img" alt="Sopa Paraguaya">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>500g Harina de maíz</li><li>300g Queso Paraguay</li><li>4 Huevos</li><li>500ml Leche</li><li>2 Cebollas blancas</li><li>100g Grasa de cerdo</li><li>Sal fina</li></ul>
+                        <ul><li>500g Harina de maíz</li><li>300g Queso Paraguay</li><li>4 Huevos</li><li>500ml Leche</li><li>2 Cebollas</li><li>100g Grasa de cerdo</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Cortar las cebollas en juliana fina y rehogarlas en la grasa hasta que estén transparentes. Dejar enfriar un poco.</li>
-                            <li>En un recipiente amplio, batir los huevos con la sal hasta que doblen su volumen.</li>
-                            <li>Agregar la cebolla rehogada (con su grasa) y el queso desmenuzado con las manos.</li>
-                            <li>Añadir la leche y, finalmente, la harina de maíz en forma de lluvia revolviendo suavemente para evitar grumos.</li>
-                            <li>Verter en una fuente para horno previamente engrasada y hornear a 200°C por 45-50 minutos hasta que la superficie esté dorada.</li>
+                            <li>Rehogar cebollas en grasa.</li>
+                            <li>Batir huevos con sal, añadir cebolla y queso.</li>
+                            <li>Incorporar leche y harina de maíz.</li>
+                            <li>Hornear a 200°C por 50 min.</li>
                         </ol>
                     </div>
                 </div>
@@ -104,19 +113,18 @@
             <!-- 2 -->
             <article class="recipe-full" id="r2">
                 <h3>Chipa Guasu</h3>
+                <img src="https://i.blogs.es/090400/chipa-guazu/1366_2000.jpg" class="recipe-img" alt="Chipa Guasu">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>1kg de Choclo fresco</li><li>400g de Queso Paraguay</li><li>5 Huevos</li><li>200ml de Leche</li><li>2 Cebollas picadas</li><li>80g de Grasa vegetal</li></ul>
+                        <ul><li>1kg de Choclo</li><li>400g de Queso Paraguay</li><li>5 Huevos</li><li>200ml de Leche</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Sofreír las cebollas en la grasa hasta que estén blandas.</li>
-                            <li>Licuar o moler los granos de choclo junto con la leche y los huevos.</li>
-                            <li>En un bol, mezclar el licuado de choclo con la cebolla frita y el queso desmenuzado.</li>
-                            <li>Engrasar una fuente y verter la mezcla. No debe ser muy alta para que se cocine bien.</li>
-                            <li>Llevar a horno medio (180°C) durante una hora aproximadamente, hasta que se sienta firme y esté tostada arriba.</li>
+                            <li>Licuar el choclo con leche y huevos.</li>
+                            <li>Mezclar con cebolla frita y queso.</li>
+                            <li>Hornear a 180°C durante una hora.</li>
                         </ol>
                     </div>
                 </div>
@@ -125,19 +133,18 @@
             <!-- 3 -->
             <article class="recipe-full" id="r3">
                 <h3>Mbejú Tradicional</h3>
+                <img src="https://tembiuparaguay.com/wp-content/uploads/2016/06/mbeju-comida-paraguaya.jpg" class="recipe-img" alt="Mbejú">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>500g de Almidón de mandioca</li><li>100g de Harina de maíz</li><li>250g de Queso Paraguay</li><li>100g de Grasa o mantequilla</li><li>Pizca de sal y un chorrito de leche</li></ul>
+                        <ul><li>500g Almidón de mandioca</li><li>100g Harina de maíz</li><li>250g Queso Paraguay</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>En un bol, mezclar el almidón, la harina de maíz y la sal.</li>
-                            <li>Agregar la grasa e integrarla con los dedos hasta obtener un arenado (masa desmigada).</li>
-                            <li>Incorporar el queso desmenuzado y humedecer con la leche poco a poco. La masa debe quedar como arena húmeda, no pegajosa.</li>
-                            <li>Calentar una sartén (sin aceite) y colocar una capa de la mezcla sin presionar el centro.</li>
-                            <li>Cocinar 3 minutos por lado, presionando solo los bordes para que tome forma circular.</li>
+                            <li>Mezclar almidón, harina y queso en un arenado.</li>
+                            <li>Cocinar en sartén caliente sin aceite.</li>
+                            <li>Dar vuelta cuando esté dorado.</li>
                         </ol>
                     </div>
                 </div>
@@ -146,19 +153,18 @@
             <!-- 4 -->
             <article class="recipe-full" id="r4">
                 <h3>Chipa Almidón</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Chipa_Paraguay.jpg" class="recipe-img" alt="Chipa Almidón">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>1kg de Almidón de mandioca</li><li>400g de Queso duro</li><li>3 Huevos</li><li>150g de Grasa de cerdo</li><li>Anís, sal y leche necesaria</li></ul>
+                        <ul><li>1kg Almidón de mandioca</li><li>400g Queso duro</li><li>3 Huevos</li><li>150g Grasa</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Batir la grasa con los huevos, la sal y el anís hasta que la mezcla blanquee.</li>
-                            <li>Agregar el queso desmenuzado y luego el almidón de a poco.</li>
-                            <li>Amasar vigorosamente agregando leche solo si es necesario, hasta tener una masa lisa.</li>
-                            <li>Formar argollas o figuras pequeñas y colocarlas en una placa.</li>
-                            <li>Hornear a temperatura muy alta (250°C) durante 15 a 20 minutos hasta que estén doradas.</li>
+                            <li>Amasar grasa, huevos, queso y almidón.</li>
+                            <li>Formar argollas.</li>
+                            <li>Hornear a 250°C por 15-20 min.</li>
                         </ol>
                     </div>
                 </div>
@@ -167,19 +173,17 @@
             <!-- 5 -->
             <article class="recipe-full" id="r5">
                 <h3>Chipa So'o</h3>
+                <img src="https://i.ytimg.com/vi/7jG4C9I1v_c/maxresdefault.jpg" class="recipe-img" alt="Chipa So'o">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>Masa de chipa de maíz</li><li>500g de Carne molida</li><li>2 Huevos duros</li><li>1 Cebolla picada</li><li>Comino y sal</li></ul>
+                        <ul><li>Masa de chipa</li><li>500g Carne molida</li><li>Huevo duro</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Preparar la masa de chipa de maíz tradicional.</li>
-                            <li>Cocinar la carne molida con la cebolla y los condimentos. Dejar enfriar y mezclar con el huevo duro picado.</li>
-                            <li>Tomar porciones de masa, formar un hueco y rellenar con la carne.</li>
-                            <li>Cerrar formando una bola y colocar en una bandeja.</li>
-                            <li>Hornear a 200°C por 30-40 minutos hasta que la masa esté cocida y crujiente.</li>
+                            <li>Hacer bolas de masa rellenas con el picadillo de carne.</li>
+                            <li>Cerrar bien y hornear a 200°C.</li>
                         </ol>
                     </div>
                 </div>
@@ -188,40 +192,17 @@
             <!-- 6 -->
             <article class="recipe-full" id="r6">
                 <h3>Chipa Mestizo</h3>
+                <img src="https://pbs.twimg.com/media/DWmXvXNWAAAbZ7H.jpg" class="recipe-img" alt="Chipa Mestizo">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>700g Almidón de mandioca</li><li>300g Harina de maíz</li><li>150g Grasa</li><li>3 Huevos</li><li>400g Queso</li></ul>
+                        <ul><li>700g Almidón</li><li>300g Harina de maíz</li><li>150g Grasa</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Mezclar ambas harinas en un bol grande.</li>
-                            <li>Seguir el procedimiento de la chipa almidón batiendo primero la grasa y huevos.</li>
-                            <li>La mezcla de harinas le da una textura intermedia única.</li>
-                            <li>Amasar bien y formar las figuras deseadas.</li>
-                            <li>Hornear a fuego fuerte por 20 minutos.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 7 -->
-            <article class="recipe-full" id="r7">
-                <h3>Chipa Rorá</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <strong>Ingredientes:</strong>
-                        <ul><li>800g de Salvado de maíz (rorá)</li><li>200g de Grasa</li><li>400g de Queso</li><li>Suero de leche o leche</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
-                        <ol>
-                            <li>Mezclar el salvado (que es más fibroso que la harina) con la grasa.</li>
-                            <li>Añadir el queso y el suero de leche hasta humectar bien la fibra.</li>
-                            <li>Es una chipa que requiere más tiempo de descanso para hidratar el salvado.</li>
-                            <li>Formar piezas medianas.</li>
-                            <li>Hornear a fuego medio-alto hasta que esté bien seco y tostado.</li>
+                            <li>Mezclar ambas harinas para una textura única.</li>
+                            <li>Amasar con queso y hornear fuerte.</li>
                         </ol>
                     </div>
                 </div>
@@ -230,19 +211,17 @@
             <!-- 8 -->
             <article class="recipe-full" id="r8">
                 <h3>Vori Vori</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a3/Vori_vori.JPG" class="recipe-img" alt="Vori Vori">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>500g Harina de maíz</li><li>200g Queso</li><li>Caldo de carne potente</li><li>Grasa de vaca</li></ul>
+                        <ul><li>Harina de maíz</li><li>Queso Paraguay</li><li>Caldo de carne</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Poner la harina de maíz en un bol con el queso desmenuzado.</li>
-                            <li>Humedecer con el caldo hirviendo y un poco de grasa hasta formar una masa maleable.</li>
-                            <li>Formar pequeñas bolitas (vori) del tamaño de una uva.</li>
-                            <li>Llevar el caldo de la olla a ebullición fuerte.</li>
-                            <li>Echar las bolitas una a una. Cocinar 10-15 minutos hasta que floten y se hinchen.</li>
+                            <li>Formar bolitas con la harina, queso y un poco de caldo.</li>
+                            <li>Hervir en el caldo hasta que floten.</li>
                         </ol>
                     </div>
                 </div>
@@ -251,19 +230,17 @@
             <!-- 9 -->
             <article class="recipe-full" id="r9">
                 <h3>Bori Bori de Gallina</h3>
+                <img src="https://www.recetapy.com/wp-content/uploads/2021/05/bori-bori-de-gallina-1024x683.jpg" class="recipe-img" alt="Bori Bori de Gallina">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>1 Gallina casera en presas</li><li>Verduras (tomate, locote, cebolla)</li><li>Harina de maíz y queso</li></ul>
+                        <ul><li>1 Gallina casera</li><li>Verduras</li><li>Masa de vori</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Dorar las presas de gallina en una olla grande.</li>
-                            <li>Añadir las verduras picadas y suficiente agua para crear un caldo sustancioso.</li>
-                            <li>Cocinar hasta que la gallina esté bien tierna.</li>
-                            <li>Preparar las bolitas de maíz y queso (vori vori) como en la receta anterior.</li>
-                            <li>Echar las bolitas al caldo de gallina hirviendo y cocinar hasta que estén listas.</li>
+                            <li>Cocinar la gallina en un caldo rico en verduras.</li>
+                            <li>Echar las bolitas de maíz al caldo hirviendo.</li>
                         </ol>
                     </div>
                 </div>
@@ -272,19 +249,17 @@
             <!-- 10 -->
             <article class="recipe-full" id="r10">
                 <h3>Payaguá Mascada</h3>
+                <img src="https://www.abc.com.py/resizer/v2/L7X6M7B5V5B7R6S7G6S7B6M7B5.jpg?auth=da97c27685601700687718991443425110d93706346299104037593683884489&smart=true&width=1200&height=675" class="recipe-img" alt="Payaguá Mascada">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>1kg de Mandioca cocida</li><li>500g de Carne molida cocida</li><li>Ajo, cebollita y comino</li></ul>
+                        <ul><li>1kg Mandioca</li><li>500g Carne cocida</li><li>Especias</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Pasar la mandioca cocida (aun caliente) por el molino o pisarla hasta que sea puré.</li>
-                            <li>Mezclar con la carne molida previamente cocinada con las especias y cebollitas.</li>
-                            <li>Amasar bien para integrar los sabores.</li>
-                            <li>Formar discos tipo hamburguesa.</li>
-                            <li>Freír en aceite bien caliente de ambos lados hasta que se doren.</li>
+                            <li>Hacer puré de mandioca y mezclar con la carne picada.</li>
+                            <li>Formar discos y freír en aceite caliente.</li>
                         </ol>
                     </div>
                 </div>
@@ -293,19 +268,17 @@
             <!-- 11 -->
             <article class="recipe-full" id="r11">
                 <h3>Pastel Mandi'o</h3>
+                <img src="https://i.ytimg.com/vi/l2KscF48n6o/maxresdefault.jpg" class="recipe-img" alt="Pastel Mandi'o">
                 <div class="recipe-flex">
                     <div class="ingred">
                         <strong>Ingredientes:</strong>
-                        <ul><li>Puré de mandioca</li><li>Harina de maíz</li><li>Carne molida con huevo duro</li></ul>
+                        <ul><li>Masa de mandioca</li><li>Harina de maíz</li><li>Carne molida</li></ul>
                     </div>
                     <div class="prepa">
-                        <strong>Preparación Detallada:</strong>
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Mezclar el puré de mandioca con un poco de harina de maíz y sal para darle elasticidad.</li>
-                            <li>Estirar la masa en círculos.</li>
-                            <li>Rellenar con un picadillo de carne bien sazonado y trozos de huevo duro.</li>
-                            <li>Cerrar como una empanada normal.</li>
-                            <li>Freír en abundante grasa o aceite muy caliente.</li>
+                            <li>Estirar la masa, rellenar con carne y cerrar.</li>
+                            <li>Freír en abundante grasa o aceite.</li>
                         </ol>
                     </div>
                 </div>
@@ -314,17 +287,17 @@
             <!-- 12 -->
             <article class="recipe-full" id="r12">
                 <h3>Jopará</h3>
+                <img src="https://www.abc.com.py/resizer/v2/G5S7G6S7B6M7B5B7R6S7G6S7B6.jpg?auth=03f0b24016790938367980595304723018868846938367980595304723018868&smart=true&width=1200&height=675" class="recipe-img" alt="Jopará">
                 <div class="recipe-flex">
                     <div class="ingred">
-                        <ul><li>Porotos</li><li>Locro (maíz)</li><li>Verduras mixtas</li><li>Queso y leche</li></ul>
+                        <strong>Ingredientes:</strong>
+                        <ul><li>Poroto</li><li>Locro</li><li>Queso y leche</li></ul>
                     </div>
                     <div class="prepa">
+                        <strong>Preparación:</strong>
                         <ol>
-                            <li>Remojar el poroto y el locro la noche anterior.</li>
-                            <li>Hervir ambos juntos hasta que estén muy suaves.</li>
-                            <li>Añadir zapallo, cebolla y otras verduras picadas.</li>
-                            <li>Dejar que el caldo espese por el almidón de los granos.</li>
-                            <li>Al final agregar queso y un chorro de leche antes de servir.</li>
+                            <li>Hervir granos hasta que estén tiernos.</li>
+                            <li>Añadir verduras y queso al final.</li>
                         </ol>
                     </div>
                 </div>
@@ -333,17 +306,15 @@
             <!-- 13 -->
             <article class="recipe-full" id="r13">
                 <h3>Locro Paraguayo</h3>
+                <img src="https://tembiuparaguay.com/wp-content/uploads/2016/06/locro-paraguayo.jpg" class="recipe-img" alt="Locro">
                 <div class="recipe-flex">
                     <div class="ingred">
-                        <ul><li>Maíz blanco locro</li><li>Carne vacuna</li><li>Cebollas y locotes</li></ul>
+                        <ul><li>Maíz blanco</li><li>Puchero</li><li>Verduras</li></ul>
                     </div>
                     <div class="prepa">
                         <ol>
-                            <li>Hervir el maíz blanco previamente remojado en abundante agua.</li>
-                            <li>Añadir carne con hueso (puchero o costilla) para dar sabor.</li>
-                            <li>Agregar las verduras picadas y sal.</li>
-                            <li>Cocinar a fuego lento hasta que el maíz esté tierno y el caldo espeso.</li>
-                            <li>Servir bien caliente, ideal para días fríos.</li>
+                            <li>Cocinar el maíz blanco con la carne por varias horas.</li>
+                            <li>Servir bien espeso.</li>
                         </ol>
                     </div>
                 </div>
@@ -352,17 +323,14 @@
             <!-- 14 -->
             <article class="recipe-full" id="r14">
                 <h3>Kivevé</h3>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/15/Kiveve.JPG" class="recipe-img" alt="Kivevé">
                 <div class="recipe-flex">
                     <div class="ingred">
-                        <ul><li>Calabaza (andaí)</li><li>Harina de maíz</li><li>Queso y leche</li></ul>
+                        <ul><li>Calabaza (andaí)</li><li>Harina de maíz</li><li>Queso</li></ul>
                     </div>
                     <div class="prepa">
                         <ol>
-                            <li>Cocinar la calabaza en poca agua hasta que se deshaga.</li>
-                            <li>Aplastar para hacer un puré fino.</li>
-                            <li>Agregar harina de maíz en lluvia mientras se revuelve para que no se pegue.</li>
-                            <li>Añadir el queso desmenuzado y leche para ajustar la cremosidad.</li>
-                            <li>Cocinar 10 minutos más y servir como guarnición o plato principal.</li>
+                            <li>Hervir calabaza, añadir harina de maíz en lluvia y terminar con queso.</li>
                         </ol>
                     </div>
                 </div>
@@ -371,17 +339,14 @@
             <!-- 15 -->
             <article class="recipe-full" id="r15">
                 <h3>Puchero</h3>
+                <img src="https://www.abc.com.py/resizer/v2/Y2J6V5X3V5BQ3H7Y7I2W3N3W3U.jpg?auth=a7b638706346299104037593683884489da97c27685601700687718991443425&smart=true&width=1200&height=675" class="recipe-img" alt="Puchero">
                 <div class="recipe-flex">
                     <div class="ingred">
-                        <ul><li>Carne con hueso</li><li>Verduras (zanahoria, papa, zapallo)</li><li>Arroz</li></ul>
+                        <ul><li>Carne con hueso</li><li>Papa, zapallo, zanahoria</li></ul>
                     </div>
                     <div class="prepa">
                         <ol>
-                            <li>Poner la carne a hervir en una olla grande con sal.</li>
-                            <li>Retirar la espuma que sube a la superficie.</li>
-                            <li>Añadir las verduras en trozos grandes.</li>
-                            <li>Agregar un poco de arroz al caldo.</li>
-                            <li>Cocinar hasta que la carne esté muy blanda y las verduras en su punto.</li>
+                            <li>Hervir la carne con las verduras hasta que todo esté tierno.</li>
                         </ol>
                     </div>
                 </div>
@@ -390,17 +355,14 @@
             <!-- 16 -->
             <article class="recipe-full" id="r16">
                 <h3>Tallarín Paraguayo</h3>
+                <img src="https://www.recetapy.com/wp-content/uploads/2021/05/tallarin-de-pollo-paraguayo.jpg" class="recipe-img" alt="Tallarín">
                 <div class="recipe-flex">
                     <div class="ingred">
-                        <ul><li>Pollo o carne</li><li>Mucho tomate y cebolla</li><li>Fideos</li></ul>
+                        <ul><li>Fideos</li><li>Pollo o carne</li><li>Salsa de tomate</li></ul>
                     </div>
                     <div class="prepa">
                         <ol>
-                            <li>Hacer un estofado potente con presas de carne enteras y abundante salsa.</li>
-                            <li>Usar extracto de tomate para darle un color rojo intenso.</li>
-                            <li>Cocinar los fideos aparte en agua con sal.</li>
-                            <li>Mezclar los fideos con parte de la salsa del estofado.</li>
-                            <li>Servir la pasta con una presa de carne encima y queso rallado.</li>
+                            <li>Preparar un estofado rojo intenso y mezclar con los fideos cocidos.</li>
                         </ol>
                     </div>
                 </div>
@@ -409,190 +371,17 @@
             <!-- 17 -->
             <article class="recipe-full" id="r17">
                 <h3>Asado con Mandioca</h3>
+                <img src="https://i.ytimg.com/vi/Uj5816v6W8Y/maxresdefault.jpg" class="recipe-img" alt="Asado">
                 <div class="recipe-flex">
                     <div class="ingred">
-                        <ul><li>Costilla vacuna</li><li>Vacio</li><li>Sal gruesa</li><li>Mandioca</li></ul>
+                        <ul><li>Costilla vacuna</li><li>Mandioca hervida</li></ul>
                     </div>
                     <div class="prepa">
                         <ol>
-                            <li>Encender el fuego con leña o carbón hasta tener brasas rojas.</li>
-                            <li>Salar la carne generosamente con sal gruesa.</li>
-                            <li>Poner en la parrilla primero del lado del hueso.</li>
-                            <li>Hervir la mandioca en agua con sal hasta que "explote" de blanda.</li>
-                            <li>Dar vuelta la carne y cocinar hasta el punto deseado. Servir con la mandioca.</li>
+                            <li>Carne a la parrilla con sal gruesa. Servir con mandioca "que explote".</li>
                         </ol>
                     </div>
                 </div>
             </article>
 
-            <!-- 18 -->
-            <article class="recipe-full" id="r18">
-                <h3>So'o Apu'a</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Carne molida</li><li>Harina de maíz</li><li>Especias</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Mezclar la carne molida con harina de maíz, sal, comino y cebollita.</li>
-                            <li>Amasar bien para que no se deshagan.</li>
-                            <li>Formar albóndigas del tamaño de una pelota de golf.</li>
-                            <li>Echar a un caldo hirviendo de verduras.</li>
-                            <li>Cocinar hasta que la carne esté cocida y el caldo tome sabor.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 19 -->
-            <article class="recipe-full" id="r19">
-                <h3>Caldo Avá</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Menudencias de vaca</li><li>Cebolla de verdeo</li><li>Especias fuertes</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Limpiar meticulosamente las menudencias (tripas, hígado, riñón).</li>
-                            <li>Hervir en abundante agua con ajo y sal.</li>
-                            <li>Agregar muchas hierbas y cebolla de verdeo picada.</li>
-                            <li>Cocinar por horas hasta que la carne sea suave.</li>
-                            <li>Es un caldo reconstituyente con sabor muy fuerte.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <!-- 20 -->
-            <article class="recipe-full" id="r20">
-                <h3>Sopa de Pescado</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Surubí en postas</li><li>Leche</li><li>Queso</li><li>Verduras</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Hacer un fondo de verduras salteadas.</li>
-                            <li>Añadir el pescado y cubrir con agua y leche.</li>
-                            <li>Cocinar a fuego suave para que el pescado no se rompa.</li>
-                            <li>Agregar el queso paraguay al final para que se derrita levemente.</li>
-                            <li>Servir con un toque de orégano fresco.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <!-- POSTRES -->
-            <article class="recipe-full postre-style" id="r21">
-                <h3>Mazamorra</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Maíz locro blanco</li><li>Agua y ceniza (lejía)</li><li>Miel negra</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Remojar el maíz toda la noche. Hervir hasta ablandar.</li>
-                            <li>Usar un poco de lejía artesanal para dar el color y textura típica.</li>
-                            <li>Dejar enfriar totalmente.</li>
-                            <li>Servir con abundante miel negra de caña de azúcar.</li>
-                            <li>Se puede comer también con leche y azúcar.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <article class="recipe-full postre-style" id="r22">
-                <h3>Dulce de Batata</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Batatas</li><li>Azúcar</li><li>Vainilla</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Cocinar las batatas peladas hasta que estén muy tiernas.</li>
-                            <li>Hacer un puré bien fino y sin hilos.</li>
-                            <li>Cocinar con el azúcar a fuego lento revolviendo constantemente.</li>
-                            <li>Cuando se despegue del fondo de la olla, añadir la vainilla.</li>
-                            <li>Poner en moldes y dejar endurecer por un día.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <article class="recipe-full postre-style" id="r23">
-                <h3>Ka'i Ladrillo</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Miel de caña</li><li>Maní tostado</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Poner la miel de caña a hervir hasta que llegue al punto de caramelo.</li>
-                            <li>Añadir el maní tostado y pelado.</li>
-                            <li>Revolver rápidamente para integrar bien.</li>
-                            <li>Verter sobre una superficie engrasada.</li>
-                            <li>Cortar en rectángulos (ladrillos) antes de que se enfríe del todo.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <article class="recipe-full postre-style" id="r24">
-                <h3>Arroz con Leche</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Arroz</li><li>Leche entera</li><li>Azúcar y canela</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Hervir el arroz en un poco de agua hasta que empiece a ablandar.</li>
-                            <li>Añadir la leche entera y cáscaras de naranja.</li>
-                            <li>Cocinar a fuego mínimo revolviendo para que no se pegue.</li>
-                            <li>Agregar el azúcar al final para evitar que se queme.</li>
-                            <li>Servir frío con mucha canela en polvo por encima.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-            <article class="recipe-full postre-style" id="r25">
-                <h3>Kivevé Dulce</h3>
-                <div class="recipe-flex">
-                    <div class="ingred">
-                        <ul><li>Calabaza</li><li>Azúcar</li><li>Leche y harina de maíz</li></ul>
-                    </div>
-                    <div class="prepa">
-                        <ol>
-                            <li>Seguir el proceso del kivevé salado hirviendo la calabaza.</li>
-                            <li>Endulzar generosamente con azúcar.</li>
-                            <li>La harina de maíz le da la consistencia cremosa.</li>
-                            <li>Se sirve frío como postre nutritivo.</li>
-                            <li>Ideal para los niños por su textura suave.</li>
-                        </ol>
-                    </div>
-                </div>
-            </article>
-
-        </section>
-
-        <!-- CULTURA -->
-        <section id="cultura" class="culture-box">
-            <h2>Nuestra Identidad Culinaria</h2>
-            <div class="culture-text">
-                <p>La gastronomía paraguaya es un fenómeno cultural único en América Latina. A diferencia de otros países, el Paraguay ha mantenido viva su lengua y sus costumbres guaraníes, fusionándolas con la influencia española.</p>
-                <p>El uso de la <strong>mandioca</strong> (que acompaña cada comida), el <strong>maíz</strong> y el <strong>queso paraguay</strong> artesanal, son los pilares de nuestro sabor nacional. Compartir una mesa en Paraguay es celebrar la historia de un pueblo que se mantiene unido a través de sus tradiciones.</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <p><strong>Sabores del Paraguay - Proyecto Educativo</strong></p>
-            <p>Hecho con amor por la cultura y el código</p>
-            <p>&copy; 2026 | HTML5 & CSS3</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+    
